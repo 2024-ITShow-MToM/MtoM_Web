@@ -1,0 +1,15 @@
+/* Pretendard 폰트 */
+@import url('https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.min.css');
+
+:root {
+    --main-color: #1D1D1D;
+
+    --pretendard-font: 'Pretendard';
+
+    --Medium: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
