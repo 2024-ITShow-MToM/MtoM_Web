@@ -16,8 +16,8 @@
 .iconContainer {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    width: 87%;
+    height: 79%;
     justify-content: space-between;
     align-items: flex-end;
     position: absolute;
@@ -39,24 +39,29 @@
     column-gap: 60px;
     position: absolute;
     z-index: 1;
+    margin-top: 6vw;
 }
 
 .defaultContainer > p {
     font-family: var(--pretendard-font);
     font-weight: var(--Medium);
-    font-size: 26px;
+    font-size: 25px;
+}
+
+.defaultContainer > .button > p {
+    height: 100%;
 }
 
 .clickedContainer > p {
     font-family: var(--pretendard-font);
     font-weight: var(--Medium);
-    font-size: 26px;
+    font-size: 25px;
     color: var(--strong-color);
 }
 
 .defaultContainer > .button {
-    width: 270px;
-    height: 270px;
+    width: 280px;
+    height: 280px;
     border-radius: 40px;
     border: 0;
     cursor: pointer;
@@ -72,8 +77,8 @@
 }
 
 .clickedContainer > .button {
-    width: 270px;
-    height: 270px;
+    width: 280px;
+    height: 280px;
     border-radius: 40px;
     border: 0;
     cursor: pointer;
