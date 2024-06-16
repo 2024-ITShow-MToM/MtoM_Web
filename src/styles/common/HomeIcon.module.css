@@ -1,0 +1,14 @@
+.homeIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3px;
+    cursor: pointer;
+}
+
+.homeIcon p {
+    font-family: var(--pretendard-font);
+    font-weight: var(--Medium);
+    font-size: 16px;
+    color: var(--strong-color);
+}
