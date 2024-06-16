@@ -11,8 +11,13 @@
     --pretendard-font: 'Pretendard';
     --Modak: "Modak";
 
+    --gray-1: #F3F3F3;
+
+    --font-4: #7F7F7F;
+
     --Regular: 400;
     --Medium: 500;
+    --SemiBold: 600;
 }
 
 * {

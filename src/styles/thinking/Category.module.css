@@ -1,0 +1,120 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+}
+
+.nextIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+
+    font-family: var(--pretendard-font);
+    font-weight: var(--Medium);
+    font-size: 30px;
+    color: var(--strong-color);
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.buttonDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    position: absolute;
+    z-index: 1;
+}
+
+.defaultContainer > .button {
+    width: 270px;
+    height: 270px;
+    border-radius: 40px;
+    border: 0;
+    row-gap: 6px;
+    cursor: pointer;
+    background-color: var(--gray-1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.defaultContainer > .button > p {
+    font-family: var(--pretendard-font);
+    font-weight: var(--SemiBold);
+    font-size: 28px;
+}
+
+.defaultContainer > .button > p:nth-child(1) {
+    font-size: 2.5rem;
+}
+
+.defaultContainer > .button > pre {
+    color: var(--font-4);
+    font-family: var(--pretendard-font);
+    font-weight: var(--Medium);
+    font-size: 14px;
+}
+
+.clickedContainer > .button {
+    width: 270px;
+    height: 270px;
+    border-radius: 40px;
+    border: 0;
+    row-gap: 6px;
+    cursor: pointer;
+    background-color: var(--strong-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickedContainer > .button > p {
+    color: white;
+    font-family: var(--pretendard-font);
+    font-weight: var(--SemiBold);
+    font-size: 28px;
+}
+
+.clickedContainer > .button > p:nth-child(1) {
+    font-size: 2.5rem;
+}
+
+.clickedContainer > .button > pre {
+    color: white;
+    font-family: var(--pretendard-font);
+    font-weight: var(--Medium);
+    font-size: 14px;
+}
