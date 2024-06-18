@@ -75,3 +75,20 @@
     height: 100%;
     object-fit: contain;
 }
+
+.homeIcon {
+    width: 100%;
+    height: 100%;
+    margin: -4%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    column-gap: 10px;
+    cursor: pointer;
+
+    font-weight: var(--Medium);
+    font-size: 30px;
+    color: var(--strong-color);
+    z-index: 100;
+}

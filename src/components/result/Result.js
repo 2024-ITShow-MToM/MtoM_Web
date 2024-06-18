@@ -1,9 +1,12 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ThinkingContext } from '../thinking/ThinkingProvider';
+import { Icon } from '@iconify/react';
 
 import styles from '../../styles/result/Result.module.css';
 
 function Result() {
+    const navigate = useNavigate();
     const { grade, category, major } = useContext(ThinkingContext);
     let CategoryImg = '';
     let NumberImg = '';
@@ -20,6 +23,10 @@ function Result() {
         case '소프트웨어과': MajorImg = 'Bule'; break;
         case '웹솔루션과': MajorImg = 'Yellow'; break;
         case '디자인과': MajorImg = 'Red'; break;
+    }
+
+    const homeClick = () => {
+        navigate('/');
     }
 
     return (
@@ -39,6 +46,10 @@ function Result() {
                         <img src={`/images/result/${NumberImg}.png`} />
                     </div>
                 </div>
+            </div>
+            <div className={styles['homeIcon']} onClick={homeClick}>
+                <p>홈으로 가기</p>
+                <Icon icon='ooui:arrow-next-ltr' />
             </div>
         </div>
     )
