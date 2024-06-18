@@ -37,8 +37,7 @@
     border: 0;
     background-color: var(--main-color);
     color: white;
-
-    font-family: var(--pretendard-font);
+    
     font-weight: var(--Medium);
     font-size: 30px;
 }

@@ -1,4 +1,77 @@
 .resultContainer{
+    position: absolute;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+}
+
+.imgContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    row-gap: 25px;
+    margin-top: 2%;
+}
+
+.imgDiv {
+    width: 420px;
+    height: 370px;
+}
+.imgDiv > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.numberDiv {
+    display: flex;
+    column-gap: 85px;
+}
+
+.colorImg {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    width: 191px;
+    height: 75px;
+}
+.colorImg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.colorImg > p,
+.numberImg > p,
+.yellowColor > p {
+    font-weight: var(--Medium);
+    font-size: 24px;
+    color: var(--font-5);
+}
+
+.numberImg {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    width: 75px;
+    height: 75px;
+}
+.numberImg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.yellowColor {
+    width: 230px;
+    height: 100px;
+}
+.yellowColor > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

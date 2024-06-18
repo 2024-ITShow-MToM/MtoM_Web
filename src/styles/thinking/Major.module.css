@@ -43,7 +43,6 @@
 }
 
 .defaultContainer > p {
-    font-family: var(--pretendard-font);
     font-weight: var(--Medium);
     font-size: 25px;
 }
@@ -53,7 +52,6 @@
 }
 
 .clickedContainer > p {
-    font-family: var(--pretendard-font);
     font-weight: var(--Medium);
     font-size: 25px;
     color: var(--strong-color);
@@ -71,9 +69,12 @@
     justify-content: center;
 
     color: white;
-    font-family: var(--Modak);
     font-weight: var(--Regular);
     font-size: 200px;
+}
+.defaultContainer > .button > p {
+    font-family: var(--Modak);
+    height: 100%;
 }
 
 .clickedContainer > .button {
@@ -91,4 +92,8 @@
     font-family: var(--Modak);
     font-weight: var(--Regular);
     font-size: 200px;
+}
+.clickedContainer > .button > p {
+    font-family: var(--Modak);
+    height: 100%;
 }

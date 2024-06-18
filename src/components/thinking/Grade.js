@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import '../../styles/common/Style.css';
@@ -6,13 +6,16 @@ import styles from '../../styles/thinking/Grade.module.css';
 
 import HomeIcon from '../common/HomeIcon';
 import NextIcon from '../common/NextIcon';
+import { ThinkingContext } from './ThinkingProvider';
 
 function Grade({ gradeData }) {
     const navigate = useNavigate();
     const [click, setClick] = useState(null);
+    const { saveGrade } = useContext(ThinkingContext);
 
     const clickItem = (index) => {
         setClick(index);
+        saveGrade(gradeData[index].grade);
     }
 
     const homeClick = () => {

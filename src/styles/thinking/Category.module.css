@@ -30,7 +30,6 @@
     column-gap: 10px;
     cursor: pointer;
 
-    font-family: var(--pretendard-font);
     font-weight: var(--Medium);
     font-size: 35px;
     color: var(--strong-color);
@@ -71,7 +70,6 @@
 }
 
 .defaultContainer > .button > p {
-    font-family: var(--pretendard-font);
     font-weight: var(--SemiBold);
     font-size: 30px;
     margin-top: 10px;
@@ -83,7 +81,6 @@
 
 .defaultContainer > .button > pre {
     color: var(--font-4);
-    font-family: var(--pretendard-font);
     font-weight: var(--Medium);
     font-size: 18px;
     margin-bottom: 20px;
@@ -106,7 +103,6 @@
 
 .clickedContainer > .button > p {
     color: white;
-    font-family: var(--pretendard-font);
     font-weight: var(--SemiBold);
     font-size: 30px;
     margin-top: 10px;
@@ -117,8 +113,7 @@
 }
 
 .clickedContainer > .button > pre {
-    color: #ffffff7a;
-    font-family: var(--pretendard-font);
+    color: white;
     font-weight: var(--Medium);
     font-size: 18px;
     margin-bottom: 20px;

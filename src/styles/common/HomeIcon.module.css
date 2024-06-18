@@ -7,7 +7,6 @@
 }
 
 .homeIcon p {
-    font-family: var(--pretendard-font);
     font-weight: var(--Medium);
     font-size: 23px;
     color: var(--strong-color);

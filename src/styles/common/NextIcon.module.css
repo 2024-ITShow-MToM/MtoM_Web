@@ -5,7 +5,6 @@
     column-gap: 10px;
     cursor: pointer;
 
-    font-family: var(--pretendard-font);
     font-weight: var(--Medium);
     font-size: 30px;
 }

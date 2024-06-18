@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import '../../styles/common/Style.css';
@@ -6,9 +6,11 @@ import styles from '../../styles/thinking/Major.module.css';
 
 import HomeIcon from '../common/HomeIcon';
 import NextIcon from '../common/NextIcon';
+import { ThinkingContext } from './ThinkingProvider';
 
 function Major({ majorData }) {
     const navigate = useNavigate();
+    const { saveMajor } = useContext(ThinkingContext);
     const [click, setClick] = useState(null);
 
     const clickItem = (index) => {
@@ -21,6 +23,7 @@ function Major({ majorData }) {
 
     const nextClick = () => {
         navigate('/category');
+        saveMajor(majorData[click].major);
     }
 
     return (

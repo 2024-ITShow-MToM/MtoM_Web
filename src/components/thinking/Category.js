@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 
@@ -6,14 +6,16 @@ import '../../styles/common/Style.css';
 import styles from '../../styles/thinking/Category.module.css';
 
 import HomeIcon from '../common/HomeIcon';
-import NextIcon from '../common/NextIcon';
+import { ThinkingContext } from './ThinkingProvider';
 
 function Category({ categoryData }) {
     const navigate = useNavigate();
+    const { saveCategory } = useContext(ThinkingContext);
     const [click, setClick] = useState(null);
 
     const clickItem = (index) => {
         setClick(index);
+        saveCategory(categoryData[index].text);
     }
 
     const homeClick = () => {
