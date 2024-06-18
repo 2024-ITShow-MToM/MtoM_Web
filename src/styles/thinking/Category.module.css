@@ -55,8 +55,8 @@
 }
 
 .defaultContainer > .button {
-    width: 280px;
-    height: 280px;
+    width: 270px;
+    height: 270px;
     border-radius: 40px;
     border: 0;
     row-gap: 6px;
@@ -87,8 +87,8 @@
 }
 
 .clickedContainer > .button {
-    width: 280px;
-    height: 280px;
+    width: 270px;
+    height: 270px;
     border-radius: 40px;
     border: 0;
     row-gap: 6px;
